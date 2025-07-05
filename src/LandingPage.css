@@ -1,0 +1,40 @@
+.landing-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0e0e0e, #1f1f1f);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.landing-title {
+  font-size: 4rem;
+  color: #facc15;
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 15px rgba(250, 204, 21, 0.4);
+}
+
+.landing-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.landing-button {
+  background-color: #facc15;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.landing-button:hover {
+  background-color: #eab308;
+  transform: scale(1.05);
+}

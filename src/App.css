@@ -1,0 +1,176 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0e0e0e;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #facc15; /* gold accent */
+  text-shadow: 2px 2px 10px rgba(250, 204, 21, 0.4);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #facc15;
+  text-align: center;
+}
+
+.mood-picker {
+  max-width: 800px;
+  text-align: center;
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 0.75rem;
+}
+
+.mood-button {
+  background-color: #1f1f1f;
+  border: 2px solid transparent;
+  border-radius: 0.75rem;
+  padding: 1rem 0.5rem;
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mood-button:hover {
+  border-color: #facc15;
+  transform: scale(1.05);
+}
+
+.mood-emoji {
+  display: block;
+  font-size: 1.75rem;
+}
+
+.chatroom {
+  width: 100%;
+  max-width: 600px;
+  background-color: #181818;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.messages-box {
+  background-color: #111;
+  border-radius: 0.5rem;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+
+.message {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.message strong {
+  color: #facc15;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  margin-top: 2rem;
+}
+
+.input-area {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.send-button {
+  background-color: #facc15;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.send-button:hover {
+  background-color: #eab308;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.action-button {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.action-button:first-child {
+  background-color: #2563eb; /* blue for change mood */
+  color: #fff;
+}
+
+.action-button:first-child:hover {
+  background-color: #1d4ed8;
+}
+
+.action-button:last-child {
+  background-color: #ef4444; /* red for logout */
+  color: #fff;
+}
+
+.action-button:last-child:hover {
+  background-color: #dc2626;
+}
